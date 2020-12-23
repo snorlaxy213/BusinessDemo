@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <package name="com.remo.filemonitoring.model"/>
+    </typeAliases>
+
+    <!-- 等同于mybatis.mapper-locations=classpath:mapper/*.xml -->
+    <mappers>
+        <mapper resource="mapper/CityMapper.xml"/>
+        <mapper resource="mapper/HotelMapper.xml"/>
+    </mappers>
+</configuration>

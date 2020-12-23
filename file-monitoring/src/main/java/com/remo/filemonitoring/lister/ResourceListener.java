@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 
 import org.springframework.stereotype.Component;
 
-@Component
+// @Component
 public class ResourceListener {
     private static ExecutorService fixedThreadPool = Executors.newCachedThreadPool();
     private WatchService ws;

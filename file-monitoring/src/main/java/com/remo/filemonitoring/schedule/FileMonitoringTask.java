@@ -7,7 +7,7 @@ import com.remo.filemonitoring.lister.ResourceListener;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-@Component
+// @Component
 public class FileMonitoringTask {
 
     private int count=0;
