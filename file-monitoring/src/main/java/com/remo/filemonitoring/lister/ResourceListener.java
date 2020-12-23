@@ -1,4 +1,4 @@
-package com.remo.filemonitoring.util;
+package com.remo.filemonitoring.lister;
 
 import java.io.IOException;
 import java.nio.file.FileSystems;
@@ -41,9 +41,9 @@ public class ResourceListener {
                 StandardWatchEventKinds.ENTRY_CREATE);
     }
 
-    public static void main(String[] args) throws IOException {
-        ResourceListener.addListener("D:\\TestFile\\");
-    }
+    // public static void main(String[] args) throws IOException {
+    //     ResourceListener.addListener("D:\\TestFile\\");
+    // }
 }
 
 class Listner implements Runnable {
@@ -71,7 +71,6 @@ class Listner implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
-            System.out.println("fdsfsdf");
             try {
                 service.close();
             } catch (IOException e) {
