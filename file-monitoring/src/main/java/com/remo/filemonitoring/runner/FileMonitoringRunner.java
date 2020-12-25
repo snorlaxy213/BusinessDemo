@@ -18,12 +18,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class FileMonitoringRunner implements ApplicationRunner {
 
-    private WatchService service = FileSystems.getDefault().newWatchService();
+    private static WatchService service;
     private static final String listenerPath = "D:\\TestFile\\";
 
     @Override
     @Async
     public void run(ApplicationArguments args) throws Exception {
+        service = FileSystems.getDefault().newWatchService();
         Path p = Paths.get(listenerPath);
         p.register(service, StandardWatchEventKinds.ENTRY_MODIFY, StandardWatchEventKinds.ENTRY_DELETE,
                 StandardWatchEventKinds.ENTRY_CREATE);
