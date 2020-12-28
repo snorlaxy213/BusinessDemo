@@ -12,6 +12,7 @@ public class ThreadExecutorConfig {
     
     @Bean 
     public Executor executor() { 
+        
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor(); 
         executor.setCorePoolSize(2);//线程池维护线程的最少数量 
         executor.setMaxPoolSize(5);//线程池维护线程的最大数量 

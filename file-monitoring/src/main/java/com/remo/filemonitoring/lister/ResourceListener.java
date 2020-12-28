@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 
 // @Component
 public class ResourceListener {
-    private static ExecutorService fixedThreadPool = Executors.newCachedThreadPool();
+    private static ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
     private WatchService ws;
     private String listenerPath;
 
@@ -29,7 +29,7 @@ public class ResourceListener {
     }
 
     private void start() {
-        fixedThreadPool.execute(new Listner(ws, this.listenerPath));
+        cachedThreadPool.execute(new Listner(ws, this.listenerPath));
     }
 
     public static void addListener(String path) throws IOException {
