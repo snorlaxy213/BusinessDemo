@@ -34,6 +34,7 @@ public class FileMonitoringThread {
                 List<WatchEvent<?>> watchEvents = watchKey.pollEvents();
                 for (WatchEvent<?> event : watchEvents) {
 
+                    
                     // TODO 根据事件类型采取不同的操作。。。。。。。
                     System.out.println(
                             "[" + listenerPath + event.context() + "]文件发生了[" + event.kind() + "]事件" + event.count());

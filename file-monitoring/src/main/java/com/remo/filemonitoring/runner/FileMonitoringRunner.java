@@ -10,6 +10,8 @@ import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.scheduling.annotation.Async;
@@ -17,6 +19,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class FileMonitoringRunner implements ApplicationRunner {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(FileMonitoringRunner.class); 
 
     private static WatchService service;
     private static final String listenerPath = "D:\\TestFile\\";
@@ -34,10 +38,10 @@ public class FileMonitoringRunner implements ApplicationRunner {
                 WatchKey watchKey = service.take();
                 List<WatchEvent<?>> watchEvents = watchKey.pollEvents();
                 for (WatchEvent<?> event : watchEvents) {
+                    String filePath = listenerPath + event.context();
+                    LOGGER.info("[" + filePath + "]文件发生了[" + event.kind() + "]事件" + event.count());
+                    
 
-                    // TODO 根据事件类型采取不同的操作。。。。。。。
-                    System.out.println(
-                            "[" + listenerPath + event.context() + "]文件发生了[" + event.kind() + "]事件" + event.count());
                 }
                 watchKey.reset();
             }
