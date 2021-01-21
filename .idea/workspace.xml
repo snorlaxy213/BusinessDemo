@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="289627d8-70ac-44f1-9cbb-2def34c3eb90" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/compare-excel/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/src/main/java/com/remo/compareexcel/CompareExcelApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/src/main/java/com/remo/compareexcel/dto/DatabaseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/src/main/java/com/remo/compareexcel/util/ExcelUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/src/main/resources/PatientLogCheck.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compare-excel/src/test/java/com/remo/compareexcel/CompareExcelApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="289627d8-70ac-44f1-9cbb-2def34c3eb90" name="默认的" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
